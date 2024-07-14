@@ -1,0 +1,50 @@
+body
+{
+     background-color: green;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+    color: white;
+     overflow: hidden;
+}
+ul{
+     list-style: none;
+     background-color: #523cd1;
+  
+     
+}
+li{
+     text-decoration: none;
+     display: inline;
+     color: rgb(231, 219, 219);
+     
+}
+li a {
+    padding: 14px 16px;
+  color: rgb(231, 219, 219);
+  
+}
+li a:hover{
+    background: linear-gradient(#caccbf, #d259e2);
+    transition: .5s;
+}
+
+label
+{
+    font-family: courier;
+    color:      rgb(22, 21, 107);
+    text-decoration: blink;
+}
+.regular-list ol{
+ 
+      list-style: none;
+}
+.regular-list li{
+      text-decoration: none;
+      color:    rgb(22, 21, 107);
+      ;
+}
+.footer {
+     color: #0f92dd;
+ }
+
+ 

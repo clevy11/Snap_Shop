@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shoe Gallery</title>
+    <body>
+        <style>
+            html{
+     scroll-behavior: smooth;
+}
+footer{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     background-color: black;
+     padding: 10px 0;
+     position: fixed;
+     bottom: 0;
+     z-index: 20;
+}
+.footer{
+     background: black;
+     color: #8a8a8a;
+     font-size: 14px;
+     padding: 60px 0 20px;
+}
+.footer h3{
+     color: #fff;
+     margin-bottom: 20px;
+
+}
+.footer-col-1,.footer-col-2,.footer-col-3{
+     min-width: 250px;
+     margin-bottom: 20px;
+}
+.footer-col-1{
+     flex-basis: 30%;
+}
+.footer-col-2{
+     flex: 1;
+     text_align: center;
+}
+.footer-col-2 img{
+     width: 180px;
+     margin-bottom: 20px;
+}
+.footer-col-3{
+     flex-basis: 12%;
+     text-align: center;
+}
+.footer ul{
+     list-style-type: disc;
+}
+.footer hr{
+     border: none;
+     background: #b5b5b5;
+     height: 1px;
+     margin: 20px 0;
+}
+.Copyright{
+     text-align: center;
+}
+        .body{  width: 100%;
+     overflow-x: hidden;
+     background-image: url('aloo.jpg');}
+        .header {
+            height: 400px;
+            background-image: url('aloo.jpg');
+            background-size: cover;
+            transition: background 1s ease-in-out;
+            position: relative;
+            backdrop-filter: blur(8px);
+}
+        
+    .nav-container{
+     width: clamp(400px, 30%, 800px);
+     display: flex;
+     flex-direction: row;
+     align-items:stretch;
+     justify-content: flex-start;
+     font-size: 50px;
+}
+
+.nav-container ul{
+     width: 100%;
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+.nav-container ul li a{
+     text-decoration:solid;
+     color: rgb(21, 22, 22);
+     font-size:20px;
+     padding: 2px 5px;
+     transition: all 0.5s;
+     border-radius: 10px;
+     font-size: 50px;
+}
+
+.nav-container ul li a:hover{
+     font-weight: bold;
+     padding: 5px 10px;
+     box-shadow: 2px 2px #1568b6;
+     background-color: rgb(170, 161, 161);
+     color: rgb(31, 32, 34);
+}
+        main{
+     width: 100%;
+     background-color: darkgray;
+     background-image: url('aloo.jpg');
+     background-attachment: fixed;
+     margin: 0;
+     padding-bottom: 50px;
+     border-top: 10px solid;
+     position: relative;
+     z-index: 1;}
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .shoe {
+            margin: 10px;
+            padding: 10px;
+            border: 10px solid #948c8c;
+            text-align: center;
+            width: 250px;
+        }
+        .shoe img {
+            max-width: 100%;
+            height: auto;
+            border-color: #979494;
+            border-style:none;
+        }
+        .shoe img:hover{ 
+     padding: 5px 10px;
+     box-shadow: 2px 2px #043b72;
+     background-color: black;
+     color: rgb(204, 198, 198);}
+        .shoe h3 {
+            margin: 10px 0;
+        }
+        .gallery{
+    
+    padding: 10px;
+    background-color:rgba(red, green, blue, alpha);
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    border-radius: 50px;
+    font-size: 50px;
+}
+
+        .shoe p {
+            font-weight: bold;
+            font-size:large;
+        }
+        a:hover{
+     font-weight: bold;
+     padding: 5px 10px;
+     box-shadow: 2px 2px #043b72;
+     background-color: black;
+     color: rgb(31, 32, 34);}
+     a{
+     text-decoration:solid;
+     color: rgb(5, 5, 5);
+     padding: 2px 5px;
+     transition: all 0.5s;
+     border-radius: 10px;
+ 
+}
+
+    </style>
+</head>
+<main>
+
+    
+
+    <div class="gallery">
+        <div class="shoe">
+            <img src="yeee.webp" alt="Women's Shoe">
+            <p> <a href="sandals.html">sandals</a></p>
+            <p>Price: $70</p>
+        </div>
+        <div class="shoe">
+            <img src="wome.webp" alt="Men's Shoe">
+            <p> <a href="girls.html">Air-jordan-1-pink</a></p>
+
+            <p>Price: $120</p>
+        </div>
+        
+        <div class="shoe">
+            <img src="download (1).jpeg" alt="Women's Shoe">
+            <p> <a href="shoe.html">high hills</a></p>
+            <p>Price: $110</p>
+        </div>
+        <div class="shoe">
+            <img src="zovrj_512.webp" alt="Women's Shoe">
+            <p> <a href="shoe.html">all-star-2010</a></p>
+            <p>Price: $300</p>
+        </div>
+        <div class="shoe">
+            <img src="download (2).jpeg" alt="Women's Shoe">
+            <p> <a href="shoe.html">ayooo</a></p>
+            <p>Price: $100</p>
+        </div>
+        <div class="shoe">
+            <img src="product-jpeg.jpg" alt="Women's Shoe">
+            <p> <a href="shoe.html">huarache</a></p>
+            <p>Price: $90</p>
+        </div>
+        
+    </div>
+
+    
+</main>
+<script src="index.js"></script>
+</body>
+<div class="footer">
+    <div class="container">
+         <div class="row">
+              <div class="footer-col-1">
+                   <h3>Download our App</h3>
+              </div>
+              <div class="footer-col-2">
+                   <img scr="img(9).jpg">
+                   
+
+              </div>
+              <div class="footer-col-3">
+                   <h3>Follow us for more info</h3>
+                   <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        
+                   </ul>
+                   
+                   
+
+              </div>
+         </div>
+         <hr>
+         <p class="Copyright">Copyright@2023</p>
+    </div>
+
+</div>
+</html>

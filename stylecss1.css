@@ -1,0 +1,543 @@
+html{
+     scroll-behavior: smooth;
+}
+
+body{
+     width: 100%;
+     overflow-x: hidden;
+     background-image: url('e-commerce.jpg');
+}
+
+*{
+     margin: 0;
+     padding: 0;
+}
+
+header{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items:center ;
+     justify-content: center;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+     background-color:black;
+     backdrop-filter: blur(8px);
+}
+.register h2{
+     color: wheat;
+     font-size: 50px;
+     padding:  0 20px;
+     margin: 20px 0;}
+     .Gallery p{
+     color: wheat;
+     font-size: 50px;
+     padding:  0 20px;
+     margin: 20px 0;}
+.Gallery{max-width: 120px;
+            margin: 100px;
+            position: CENTER;
+            padding:20px;
+            height: auto;
+            border-radius: 0px;
+            color: black;
+            font-smooth:initial;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)}
+
+header .logo-container{
+     width: clamp(100px, 10%, 400px);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* border: 1px solid; */
+     padding: 10px 0;
+}
+
+header .logo-container img{
+     width: 40%;
+     aspect-ratio: 1/1;
+     border-radius: 50%;
+     background-color:black;
+}
+.Gallery h1{
+      font-size: 100px;
+}
+
+header .nav-container{
+     width: clamp(400px, 30%, 800px);
+     display: flex;
+     flex-direction: row;
+     align-items:stretch;
+     justify-content: flex-start;
+}
+
+header .nav-container ul{
+     width: 100%;
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+header .nav-container ul li a{
+     text-decoration: none;
+     color: aliceblue;
+     font-size:16px;
+     padding: 2px 5px;
+     transition: all 0.5s;
+     border-radius: 5px;
+}
+
+header .nav-container ul li a:hover{
+     font-weight: bold;
+     padding: 5px 10px;
+     box-shadow: 2px 2px #123f69;
+     background-color: black;
+     color: royalblue;
+}
+
+footer{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     background-color: black;
+     padding: 10px 0;
+     position: fixed;
+     bottom: 0;
+     z-index: 20;
+}
+.footer{
+     background: black;
+     color: #8a8a8a;
+     font-size: 14px;
+     padding: 60px 0 20px;
+}
+.footer h3{
+     color: #fff;
+     margin-bottom: 20px;
+
+}
+.footer-col-1,.footer-col-2,.footer-col-3{
+     min-width: 250px;
+     margin-bottom: 20px;
+}
+.footer-col-1{
+     flex-basis: 30%;
+}
+.footer-col-2{
+     flex: 1;
+     text_align: center;
+}
+.footer-col-2 img{
+     width: 180px;
+     margin-bottom: 20px;
+}
+.footer-col-3{
+     flex-basis: 12%;
+     text-align: center;
+}
+.footer ul{
+     list-style-type: disc;
+}
+.footer hr{
+     border: none;
+     background: #b5b5b5;
+     height: 1px;
+     margin: 20px 0;
+}
+.Copyright{
+     text-align: center;
+}
+
+/* styling section 1  */
+
+section{
+     position: relative;
+}
+main{
+     width: 100%;
+     background-image: url('e-commerce.jpg');
+     background-attachment: fixed;
+     margin: 0;
+     padding-bottom: 50px;
+     border-top: 1px solid;
+     position: relative;
+     z-index: 1;
+}
+
+main section{
+     position: relative;
+     z-index: 1;
+}
+
+main .hero{
+     width: clamp(380px, 70%, 1600px);
+     margin:  40px auto;
+     padding: 150px 0;
+}
+
+main .hero i{
+     font-size: 45px;
+     color:black;
+}
+main .hero{background-color: whitesmoke;}
+
+main .hero h1{
+     font-size: 100px;
+     color: aliceblue;
+     margin: 20px 0;
+}
+
+main .hero h2{
+     font-size: 60px;
+     color: rgb(184, 202, 195);
+}
+
+main .hero h2 span {
+     color: rgb(146, 220, 233);
+     background-color: #c43030c2;
+     padding: 2px 20px ;
+     border-radius: 40px;
+}
+
+main .hero p{
+     width: 60%;
+     font-size: 25px;
+     padding: 20px 30px 20px 5px;
+     color: black(129, 148, 165);
+     line-height: 40px;
+     letter-spacing: 0.56px;
+     margin: 20px 0;
+}
+
+main .hero button {
+     width: 150px;
+     padding: 10px;
+     font-size: 22px;
+     font-weight: bold;
+     color: #123f69;
+     border: none;
+     border-radius: 10px;
+     transition:  all 0.5s;
+
+}
+
+main .hero button:hover{
+     cursor: pointer;
+     transform: translateX(5px);
+     transform: translateY(5px);
+     box-shadow: 5px 5px #c43030bb;
+}
+
+main .progress{
+     width: clamp(380px, 70%, 1600px);
+     margin: 0 auto;
+     z-index: 10;
+}
+
+main .progress h2{
+     font-size: 50px;
+     width: 100%;
+     text-align: left;
+     color: wheat;
+     margin: 10px 0;
+     padding: 0 20px;
+}
+
+main .progress table{
+     border: 5px solid #c43030fd;
+     width: 80%;
+     margin: 20px 0;
+     border-radius: 20px;
+     padding: 10px;
+}
+
+main .progress table thead{
+     background-color: #c43030fd;
+     color: #a8edf1;
+     font-size: 30px;
+}
+
+main .progress table thead td{
+     padding: 10px 0;
+     text-align: center;
+     font-weight: bold;
+     border-radius: 10px;
+}
+
+main .progress table tbody{
+     background-color: #c4303069;
+}
+
+main .progress table tbody td{
+     font-size: 20px;
+     text-align: center;
+     padding: 10px;
+     color: #a8edf1;
+     border-radius: 10px;
+}
+
+main .register{
+     width: clamp(380px, 70%, 1600px);
+     margin: 0 auto;
+     padding: 30px 0;
+     z-index: 10;
+}
+
+main .register h2{
+     font-size: 40px;
+     color: darkblue;
+     margin:  10px 0;
+}
+
+main .register form{
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: black;
+     font-size: 20px;
+}
+
+main .register .group{
+     width: 60%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin:  10px 0;
+}
+
+
+main .register .group label{
+     font-size: 20px;
+     font-weight: bold;
+     color: black;
+}
+
+main .register .group input{
+     background-color: indigo;
+     outline: none;
+     border: none;
+     padding: 10px 30px ;
+     width: 60%;
+     color: b;
+     border-radius: 12pc;
+     box-shadow: 1px 1px 5px #c4303069;
+}
+
+main .register .group button{
+     width: 150px;
+     padding: 10px;
+     font-size: 22px;
+     font-weight: bold;
+     color: darkolivegreen;
+     border: none;
+     border-radius: 10px;
+     transition:  all 0.5s;
+     align-self: flex-end;
+}
+
+main .myImage{
+     position: fixed;
+     width: 500px;
+     top: 25%;
+     right: 10%;
+     z-index: 0;
+     background-color: rgba(15, 47, 68, 0.692);
+     border-radius: 50%;
+     aspect-ratio: 1/1;
+}
+main a {
+     display: inline-block;
+     font-weight: bolder;
+     font-size: 30px;
+    padding: 10px 20px;
+    background-color:rgb(12, 12, 12); /* Background color */
+    color: white; /* Text color */
+    text-decoration:none; /* Remove the default underline */
+    border: 2px solid rgb(5, 5, 5); /* Border color and width */
+    border-radius: 35%; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+
+ }
+ 
+.About{
+     width: 100%;
+     padding: 80px 0;
+}
+
+.about{
+     width: 70%;
+     box-sizing: border-box;
+     padding: 30px;
+     background-color: #0b2a3d8e;
+     backdrop-filter: blur(10px);
+     margin: 50px auto;
+     border-radius: 20px;
+}
+
+.about h2{
+     padding: 0 0 0 20px;
+     font-size: 50px;
+     color: wheat;
+     margin: 10px;
+}
+
+.about p{
+     color: #929d9e;
+     font-size: 20px;
+     letter-spacing: 0.56px;
+     padding: 0 0 0 40px;
+     margin-bottom: 20px;
+     width: 80%;
+}
+
+.about p span{
+     color: #e65050;
+}
+
+.services{
+     width: 70%;
+     margin: 50px auto;
+     padding: 80px 0;
+}
+
+.services h2{
+     color: black;
+     font-size: 50px;
+     padding:  0 20px;
+     margin: 20px 0;
+}
+
+.services table{
+     width: 80%;
+     border: 5px solid #c43030fd;
+     border-radius: 20px;
+     padding: 10px;
+     background-color: #c4303073;
+     backdrop-filter: blur(10px);
+}
+
+.services table thead{
+     color: #a8edf1;
+     font-size: 30px;
+     font-weight: 600;
+     background: #912626;
+     text-align: center;
+}
+
+.services table thead td{
+     padding: 6px 0;
+     border-radius: 10px;
+}
+
+.services table tbody td{
+     color: #a8edf1;
+     font-size: 20px;
+     padding: 5px 0 5px 5px;
+     background-color: #72121263;
+     border-radius: 10px;
+     text-align: center;
+}
+
+.services table tbody td span{
+     color: #929d9e;
+     font-size: 16px;
+}
+
+.hireMe{
+     width: 100%;
+     height: 100vh;
+     background-color: #88aad154;
+     backdrop-filter: blur(8px);
+     position: fixed;
+     left:0;
+     top: 0;
+     z-index: 99;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     transition:all 1s;
+
+}
+
+.hireMe .container{
+     width: 50%;
+     background-color: #063553;
+     padding: 30px;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.5s;
+}
+
+.hireMe .container h2{
+     color: #a8edf1;
+     font-size: 50px;
+     font-weight: bold;
+     margin: 10px 0;
+}
+
+.hireMe .container form .group{
+     width: 600px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     margin: 20px 0;
+}
+
+.hireMe .container form .group label{
+     font-size: 20px;
+     color: #929d9e;
+     font-weight: bold;
+}
+
+.hireMe .container form .group input, .hireMe .container form .group textarea{
+     width: 60%;
+     padding: 10px 10px;
+     color: #071725;
+     border-radius: 10px;
+     border: none;
+     outline: none;
+     font-size: 18px;
+}
+
+.hireMe .container form button {
+     font-size: 18px;
+     font-weight: bold;
+     color: #071725;
+     padding: 7.5px 20px;
+     border-radius: 10px;
+     border: none;
+     margin: 0 20px;
+     transition: all 0.5s;
+}
+
+
+.hireMe .container form button:hover{
+     cursor: pointer;
+     color: #a8edf1;
+     background-color: #912626;
+     box-shadow: 2px 2px #071725;
+}
+
+.success{
+     color: #2b9c2b;
+     font-size: 18px;
+     margin: 10px;
+     font-weight: bold;
+     display: none;
+}
+
+#close{
+     display: none;
+}

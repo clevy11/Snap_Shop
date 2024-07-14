@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap and Shop</title>
+    <script src="https://kit.fontawesome.com/e2a0893e64.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a6518f2b3a.js"></script>
+    <style>
+      html{
+     scroll-behavior: smooth;
+}
+
+footer{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     background-color: black;
+     padding: 10px 0;
+     position: fixed;
+     bottom: 0;
+     z-index: 20;
+}
+.footer{
+     background: black;
+     color: #8a8a8a;
+     font-size: 14px;
+     padding: 60px 0 20px;
+}
+.footer h3{
+     color: #fff;
+     margin-bottom: 20px;
+
+}
+.footer-col-1,.footer-col-2,.footer-col-3{
+     min-width: 250px;
+     margin-bottom: 20px;
+}
+.footer-col-1{
+     flex-basis: 30%;
+}
+.footer-col-2{
+     flex: 1;
+     text_align: center;
+}
+.footer-col-2 img{
+     width: 180px;
+     margin-bottom: 20px;
+}
+.footer-col-3{
+     flex-basis: 12%;
+     text-align: center;
+}
+.footer ul{
+     list-style-type: disc;
+}
+.footer hr{
+     border: none;
+     background: #b5b5b5;
+     height: 1px;
+     margin: 20px 0;
+}
+.Copyright{
+     text-align: center;
+}
+        .icons i{
+            font-size: 15px;
+            color: white;
+            background-color: black;
+            padding: 5px 7px;
+            border-radius: 50%;
+        }
+
+        main .content-part{
+            float: left;
+        }
+
+        main{  
+            padding: 50px 100px;
+            box-shadow: 0px 5px 8px blueviolet;
+            height: 400px;
+            margin-bottom: 20px;
+            background-color:rgb(215, 215, 223);
+        }
+
+        main .contact-form{
+            margin-left: 10%;
+        }
+
+        main input,main textarea{
+            border: none;
+            margin-bottom: 30px;
+        }
+        main button{
+            border: none;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        center p button{
+            margin-left:20 ;
+            padding: 10px 15px;
+            background-color: rgb(215, 215, 223)violet;
+            cursor: pointer;
+        }
+        body{
+            background-color:rgba(red, green, blue, alpha)
+            background-position: center;
+            background-repeat:no-repeat;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact form button {
+     font-size: 18px;
+     font-weight: bold;
+     color: #071725;
+     padding: 7.5px 20px;
+     border-radius: 10px;
+     border: none;
+     margin: 0 20px;
+     transition: all 0.5s;
+}
+h1{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: oblique;}
+
+
+.contact  form button:hover{
+     cursor: pointer;
+     color: #fcfcfc;
+     background-color: #160101;
+     box-shadow: 2px 2px #071725;
+}
+.contact ul a{display: inline-block;
+     font-weight: bolder;
+     font-size: 30px;
+    padding: 10px 20px;
+    background-color:rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    text-decoration:none; 
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 35%; 
+    font-weight: bold; }
+     .contact a:hover{cursor: pointer;
+     color: #ffffff;
+     background-color: #160101;
+     box-shadow: 2px 2px #071725;}
+
+body{background-image: url('aloo.jpg');
+     
+     overflow-x: hidden;
+}
+
+.contact{
+    box-sizing:border-box;
+    
+background-color:rgb(215, 215, 223)
+margin: auto;
+    border-radius: 40px;
+}
+    </style>
+</head>
+<body>
+    <section id="contact" class="contact">
+        <div class="contact">
+            <h1>Contact SNAP AND SHOP</h1>
+            <main>
+                <div class="content-part location">
+                    <h2>Location</h2>
+                    <p>
+                        <small>
+                            Kigali AV8 <br>
+                            iL 60604-2340
+                        </small>
+                    </p>
+                    <h2>Follow us</h2>
+                    <div class="icons">
+                        <a href="https:www.facebook.com/Caleb Levy Buntu/"> <i class="fa fa-facebook"></i></a>
+                        <a href="#"> <i class="fa fa-twitter"></i></a>
+                        <a href="https:www.instagram.com/Toomuchgabriella/ "> <i class="fa fa-instagram"></i></a>
+                        <a href="https:www.google.com/impamichelle@gmail.com/"> <i class="fa fa-envelope"></i></a>
+                    </div>
+                    &copy;2023 privacy policy
+                    <p><ul><a href="e-commerce.html">Return to Home</a></ul></p>
+                </div>
+                <form id="contactForm" action="contact.php" method="post" onsubmit="handleSubmit()">
+                    <h2>Contact Form</h2>
+                    <div class="group">
+                        <label for="name">Name:</label>
+                        <input type="text" required id="name" name="name" placeholder="Caleb....">
+                    </div>
+                    <div class="group">
+                        <label for="email">Email:</label>
+                        <input type="email" required id="email" name="email" placeholder="example@....">
+                    </div>
+                    <div class="group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" placeholder="+2507....">
+                    </div>
+                    <div class="group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" required id="message" placeholder="Message...." cols="30" rows="5"></textarea>
+                    </div>
+                    <button type="submit" name="submit">Send</button>
+                    <button type="reset" onclick="hireMe()">Cancel</button>
+                    <p id="success" class="success">Thank you for contacting us! We shall reach you soon.</p>
+                    <button type="button" onclick="hireMe()" id="close">Close</button>
+                </form>
+            </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download our App</h3>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="img(9).jpg" alt="App Image">
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Follow us for more info</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function handleSubmit() {
+            const form = document.getElementById("contactForm");
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                fetch("contact.php", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    console.log(data);
+                    location.reload(); // Reload the page for a more interactive and responsive feel
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+        }
+
+        function hireMe() {
+            console.log("Hire Me clicked!");
+            // Add any custom actions for the 'Hire Me' button
+        }
+    </script>
+</body>
+</html>
